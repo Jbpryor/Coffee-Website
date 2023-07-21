@@ -1,4 +1,9 @@
 // Swiper js
+// import Swiper bundle with all modules installed
+import Swiper from 'swiper/bundle';
+// import styles bundle
+import 'swiper/css/bundle';
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     // grabCursor: true,
@@ -16,7 +21,7 @@ var swiper = new Swiper(".mySwiper", {
 // Nav open close
 const body = document.querySelector('body'),
     navMenu = body.querySelector('.menu-content'),
-    navOpenBtn = body.querySelector('.navOpen-btn')
+    navOpenBtn = body.querySelector('.navOpen-btn'),
     navCloseBtn = navMenu.querySelector('.navClose-btn');
 
 if (navMenu && navOpenBtn) {
