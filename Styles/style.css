@@ -114,6 +114,20 @@ img {
     column-gap: 0.6rem;
 }
 
+.button {
+    border: none;
+    outline: none;
+    color: var(--white-color);
+    padding: 1.4rem 4rem;
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+    transition: var(--tran-0-3);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary-color-hover);
+}
 
 
 /* Header */
@@ -273,31 +287,130 @@ img {
     position: absolute;
     left: 0;
     top: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: var(--z-overlay);
 }
 
 .home-img {
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
 /* Swiper Button */
-.swiper-button-next.swiper-navBtn,
-.swiper-button-prev.swiper-navBtn {
+.mySwiper .swiper-navBtn {
+    /* display: flex; */
     height: 5rem;
     width: 5rem;
     color: var(--white-color);
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.2);
     transition: var(--tran-0-2);
-    /* opacity: 0; */
+    opacity: 0;
     visibility: visible;
 }
 
+.home:hover .swiper-navBtn {
+    opacity: 1;
+}
+
+.mySwiper .swiper-navBtn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mySwiper .swiper-navBtn::after,
+.mySwiper .swiper-navBtn::before {
+    font-size: 2rem;
+}
+
+.mySwiper .swiper-button-next {
+    right: 16rem;
+}
+
+.mySwiper .swiper-button-prev {
+    left: 16rem;
+}
+
+.mySwiper .swiper-pagination-bullet {
+    background-color: var(--white-color);
+    opacity: 1;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-bottom: 2rem;
+    visibility: hidden;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+    border: 3px solid var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.home-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: var(--z-fixed);
+    transform: translate(-50%, -50%);
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    row-gap: 4rem;
+}
+
+.homeSubtitle {
+    text-align: center;
+    font-size: var(--normal-font);
+    color: var(--white-color);
+}
+
+.homeTitle {
+    text-align: center;
+    font-size: var(--big-font);
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+}
 /* About */
 
 
 /* Menu */
+
+
+
+/* Brand */
+
+
+
+/* Review */
+
+
+
+
+/* Swiper Btn */
+
+
+
+
+/* Newsletter */
+
+
+
+
+/* Footer */
+
+
+
+/* Scroll Up */
+
+
+
+/* Responsive Media */
+
+@media screen  and (max-width: 768px) {
+    .mySwiper .swiper-navBtn {
+        visibility: hidden;
+    }
+    .mySwiper .swiper-pagination-bullet {
+        visibility: visible;
+    }
+}
