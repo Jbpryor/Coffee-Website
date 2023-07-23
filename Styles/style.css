@@ -586,6 +586,25 @@ margin-left: 4px;}
 
 /* Brand */
 
+.brand-images {
+    display: grid;
+    align-items: center;
+    column-gap: 2rem;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 3rem;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.brand-image {
+    width: 150px;
+    object-fit: contain;
+    opacity: 0.4;
+    transition: var(--tran-0-5);
+}
+.brand-image:hover {
+    opacity: 1;
+}
 
 
 /* Review */
