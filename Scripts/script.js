@@ -14,10 +14,10 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // Nav open close
-const body = document.querySelector('body'),
-    navMenu = body.querySelector('.menu-content'),
-    navOpenBtn = body.querySelector('.navOpen-btn'),
-    navCloseBtn = navMenu.querySelector('.navClose-btn');
+const   body = document.querySelector('body'),
+        navMenu = body.querySelector('.menu-content'),
+        navOpenBtn = body.querySelector('.navOpen-btn'),
+        navCloseBtn = navMenu.querySelector('.navClose-btn');
 
 if (navMenu && navOpenBtn) {
     navOpenBtn.addEventListener('click', () => {
