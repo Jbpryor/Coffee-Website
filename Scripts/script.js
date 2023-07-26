@@ -32,7 +32,6 @@ if (navMenu && navCloseBtn) {
     })
 }
 
-
 // Change header bg color
 
 

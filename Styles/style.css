@@ -2,6 +2,7 @@
 
 html {
     font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
 }
 
 
@@ -830,6 +831,34 @@ margin-left: 4px;}
 }
 
 /* Scroll Up */
+
+.scrollUp-btn {
+    display: flex;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    height: 3rem;
+    width: 3rem;
+    font-size: 3rem;
+    border-radius: 4px;
+    color: var(--primary-color-hover);
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--white-color);
+    z-index: var(--z-overlay);
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollUp-icon {
+    opacity: 0.8;
+    transition: var(--tran-0-3);
+
+}
+
+.scrollUp-btn:hover .scrollUp-icon {
+    opacity: 1;
+}
 
 
 
